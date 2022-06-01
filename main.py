@@ -21,9 +21,7 @@ import json
 # virtualenv <your-env>
 # <your-env>\Scripts\activate
 # <your-env>\Scripts\pip.exe install google-cloud-firestore
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
+
 import timeit
 import RPi.GPIO as GPIO
 import time
