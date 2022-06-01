@@ -79,12 +79,12 @@ try:
             GPS_Info()                                          #get time, latitude, longitude
  
             print("lat in degrees:", lat_in_degrees," long in degree: ", long_in_degrees, '\n')
-            map_link = 'http://maps.google.com/?q=' + lat_in_degrees + ',' + long_in_degrees    #create link to plot location on Google map
+#            map_link = 'http://maps.google.com/?q=' + lat_in_degrees + ',' + long_in_degrees    #create link to plot location on Google map
             print("<<<<<<<<press ctrl+c to plot location on google maps>>>>>>\n")               #press ctrl+c to plot on map and exit 
             print("------------------------------------------------------------\n")
                         
 except KeyboardInterrupt:
-    webbrowser.open(map_link)        #open current position information in google map
+#    webbrowser.open(map_link)        #open current position information in google map
     sys.exit(0)
 
 GPIO.setmode(GPIO.BCM)
