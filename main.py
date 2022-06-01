@@ -32,7 +32,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 class UploadJsonFileToFirestore:
-    def __init__(self) -> None:
+    def __init__(self):
         # Get class running time
         self.start = timeit.default_timer()
         # Check to make sure the command line arguements 
