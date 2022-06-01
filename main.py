@@ -38,7 +38,7 @@ class UploadJsonFileToFirestore:
         # Check to make sure the command line arguements 
         # are atleast 3 arguements
         if len(sys.argv[1:]) != 3:
-            print(f'ERROR: Check your command line arguments!,\n 3 arguements expected [file=filepath, method=[set or add], collectionname=[firestore collection name]')
+            print('ERROR: Check your command line arguments!,\n 3 arguements expected [file=filepath, method=[set or add], collectionname=[firestore collection name]')
             return None
         
         # Initialize instance variables
@@ -60,7 +60,7 @@ class UploadJsonFileToFirestore:
         if val == 'set' or val == 'add':
             self._method = val
         else:
-            print(f'Wrong method {val}, use set or add')
+            print('Wrong method {val}, use set or add')
     
     # Get Json file path property
     @property
@@ -82,9 +82,9 @@ class UploadJsonFileToFirestore:
                 f.close()
                 self._json_data = data
             except Exception as e:
-                print(f'FILE EXCEPTION: {str(e)}')
+                print('FILE EXCEPTION: {str(e)}')
         else:
-            print(f'Wrong file path {val}')
+            print('Wrong file path {val}')
 
     # Main class method to populate firestore 
     # With the said data
