@@ -1,6 +1,9 @@
 #python
 # To run code use: python upload-json-file-to-firestore.py data.json add users-demo-add
 # for command line arguements.
+
+# -*- coding: utf-8 -*-
+
 import sys
 import json
 
