@@ -46,8 +46,8 @@ class UploadJsonFileToFirestore:
         self.method = sys.argv[1:][1]
         self.collectionname = sys.argv[1:][2]
     
-    def __str__(self) -> str:
-        return (f'Uploading ****{self.file}***** JSON items to firestore!')
+    def __str__(self):
+        return ('Uploading ****{self.file}***** JSON items to firestore!')
     
     # Firestore upload method getter method
     @property
